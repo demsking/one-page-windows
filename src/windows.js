@@ -4,7 +4,7 @@
  * Original author: @nick-jonas
  * Contributors:
  *  - Sébastien Demanou
- * Website: http://www.workofjonas.com
+ * Website: http://nick-jonas.github.com/windows
  * Licensed under the MIT license
  */
 
