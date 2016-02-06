@@ -1,0 +1,26 @@
+{
+  "name": "one-page-windows",
+  "homepage": "https://github.com/demsking/one-page-windows",
+  "authors": [
+    "Sébastien Demanou"
+  ],
+  "description": "A handy, loosely-coupled jQuery plugin for full-screen scrolling windows",
+  "main": "dist/windows.min.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "scroll page",
+    "one page",
+    "full-screen",
+    "scrolling windows"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
