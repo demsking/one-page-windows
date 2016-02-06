@@ -8,8 +8,7 @@
 
 ;(function ( $, window, document, undefined ) {
 
-
-var that = this,
+    var that = this,
         pluginName = 'windows',
         defaults = {
             snapping: true,
