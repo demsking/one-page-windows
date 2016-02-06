@@ -32,6 +32,12 @@
      * @param {Object} customOptions        options to override defaults
      */
     function windows( element, customOptions ) {
+        element.style.position = 'absolute';
+        element.style.top = (100 * $windows.length) + '%';
+        element.style.width = '100%';
+        element.style.height = '100%';
+        element.style.boxShadow = '0px 5px 7px -2px rgba(0,0,0,0.1)';
+        element.style.backgroundColor = '#fff';
 
         this.element = element;
         options = options = $.extend( {}, defaults, customOptions) ;
@@ -41,7 +47,6 @@
         var isOnScreen = $(element).isOnScreen();
         $(element).data('onScreen', isOnScreen);
         if(isOnScreen) options.onWindowEnter($(element));
-
     }
 
     /**
@@ -150,6 +155,12 @@
 
         $w.scroll(_onScroll);
         $w.resize(_onResize);
+        
+        this.each((function(selection) {
+            return function(i) {
+                this.style.zIndex = selection.length - i;
+            };
+        })(this));
 
         return this.each(function(i) {
             if (!$.data(this, 'plugin_' + pluginName)) {
