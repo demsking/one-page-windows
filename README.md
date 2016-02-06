@@ -1,12 +1,13 @@
-# windows
+# one-page-windows
 
 ---
 
-#### a handy, loosely-coupled jQuery plugin for full-screen scrolling windows
+A handy, loosely-coupled jQuery plugin for full-screen scrolling windows.
+Written originally by [nick-jonas](https://github.com/nick-jonas/nick-jonas.github.com/tree/master/windows)
 
 ## Usage
 
-Include the latest jQuery and `assets/js/jquery.windows.js` in your HTML page.
+Include the latest jQuery and `dist/windows.min.js` in your HTML page.
 
 #### html
 
@@ -39,24 +40,6 @@ $(document).ready(function(){
     })
 
 });
-```
-
-#### scss
-
-```scss
-.window{
-    width:100%;
-    height:100%;
-    position:absolute;
-}
-
-@for $i from 1 through 6{
-    .window:nth-child(#{$i}){
-        background:nth($colors, $i);
-        top:($i - 1) * 100%;
-    }
-}
-
 ```
 
 ## In the Wild
